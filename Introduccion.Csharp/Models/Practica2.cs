@@ -34,7 +34,5 @@ namespace Introduccion.Csharp.Models
                 Console.WriteLine("Carrera: " + carrera);
 
             }
-
-
         }
     }

@@ -13,7 +13,8 @@ namespace Introduccion.Csharp.Models
                 Practica2 p2 = new Practica2();
                 p2.IngresarDatos();
                 p2.MostrarDatos();
-                /*
+                
+            /*
                 int cal1 = 0;
                 int cal2, cal3, resultado, x, y, f;
                 string dato1;
