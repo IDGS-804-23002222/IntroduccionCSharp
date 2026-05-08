@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Introduccion.Csharp.Models;
+using Introduccion.Csharp.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,6 +26,19 @@ namespace Introduccion.Csharp.Controllers
             int res = Convert.ToInt16(x) + Convert.ToInt16(y);
             ViewBag.Res = Convert.ToString(res);
             return View();
+        }
+
+        public ActionResult MuestraPeliculas()
+        {
+            var peliculasService = new PeliculasService();
+            var model = peliculasService.ObtenerPelicula();
+            return View(model);
+        }
+
+        public ActionResult Calculos(OperasBas op)
+        {
+            op.Suma();
+            return View(op);
         }
     }
 }
